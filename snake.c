@@ -134,7 +134,7 @@ int main(void) {
         displayBoard(gameboard);
 
         // check if the player won
-        if (snakeLen >= 16) {
+        if (snakeLen >= 32) {
             printf("YOU WON!\n\r");
             break;
         }
