@@ -48,10 +48,10 @@ int main(void) {
 
         int count = select(numberOfFDs, &readfds, NULL, NULL, &timeoutTime);
 
-        // get input 
+        // was there any input
         if (count > 0) {
             if (FD_ISSET(0, &readfds)) {
-                // A character was pressed; read and consume it, then break
+                // get the input
                 lastInput = toupper(getchar()); 
             }
         }
